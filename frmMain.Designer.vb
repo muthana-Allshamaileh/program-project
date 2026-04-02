@@ -51,13 +51,16 @@ Partial Class frmMain
         Button3 = New Button()
         Button2 = New Button()
         Button1 = New Button()
+        FileSystemWatcher1 = New IO.FileSystemWatcher()
         MenuStrip1.SuspendLayout()
         StatusStrip1.SuspendLayout()
         Panel1.SuspendLayout()
+        CType(FileSystemWatcher1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' MenuStrip1
         ' 
+        MenuStrip1.BackColor = SystemColors.ActiveCaption
         MenuStrip1.Items.AddRange(New ToolStripItem() {النوافذToolStripMenuItem, إدارةالكتبوالمؤلفينToolStripMenuItem, إدارةالأعضاءToolStripMenuItem, الإستعارةوالإسترجاعToolStripMenuItem, ملفToolStripMenuItem})
         MenuStrip1.Location = New Point(0, 0)
         MenuStrip1.MdiWindowListItem = النوافذToolStripMenuItem
@@ -162,6 +165,7 @@ Partial Class frmMain
         ' 
         ' StatusStrip1
         ' 
+        StatusStrip1.BackColor = SystemColors.ActiveBorder
         StatusStrip1.Items.AddRange(New ToolStripItem() {lblEmpName, lblDate})
         StatusStrip1.Location = New Point(0, 428)
         StatusStrip1.Name = "StatusStrip1"
@@ -188,7 +192,8 @@ Partial Class frmMain
         ' 
         ' Panel1
         ' 
-        Panel1.BackColor = Color.BurlyWood
+        Panel1.BackColor = Color.SlateGray
+        Panel1.BorderStyle = BorderStyle.Fixed3D
         Panel1.Controls.Add(Panel2)
         Panel1.Controls.Add(Button5)
         Panel1.Controls.Add(Button4)
@@ -203,10 +208,11 @@ Partial Class frmMain
         ' 
         ' Panel2
         ' 
+        Panel2.BorderStyle = BorderStyle.FixedSingle
         Panel2.Dock = DockStyle.Top
         Panel2.Location = New Point(0, 0)
         Panel2.Name = "Panel2"
-        Panel2.Size = New Size(132, 35)
+        Panel2.Size = New Size(128, 35)
         Panel2.TabIndex = 5
         ' 
         ' Button5
@@ -244,7 +250,7 @@ Partial Class frmMain
         Button4.Location = New Point(3, 221)
         Button4.Name = "Button4"
         Button4.Padding = New Padding(3, 0, 0, 0)
-        Button4.Size = New Size(123, 57)
+        Button4.Size = New Size(126, 57)
         Button4.TabIndex = 3
         Button4.Text = "شؤون المستعيرين"
         Button4.TextAlign = ContentAlignment.MiddleLeft
@@ -283,10 +289,9 @@ Partial Class frmMain
         Button2.ForeColor = SystemColors.ButtonFace
         Button2.Image = CType(resources.GetObject("Button2.Image"), Image)
         Button2.ImageAlign = ContentAlignment.MiddleLeft
-        Button2.Location = New Point(3, 103)
+        Button2.Location = New Point(3, 94)
         Button2.Name = "Button2"
-        Button2.Padding = New Padding(3, 0, 0, 0)
-        Button2.Size = New Size(126, 48)
+        Button2.Size = New Size(126, 57)
         Button2.TabIndex = 1
         Button2.Text = "إدارة الكتب"
         Button2.TextAlign = ContentAlignment.MiddleLeft
@@ -314,6 +319,11 @@ Partial Class frmMain
         Button1.TextImageRelation = TextImageRelation.ImageBeforeText
         Button1.UseVisualStyleBackColor = True
         ' 
+        ' FileSystemWatcher1
+        ' 
+        FileSystemWatcher1.EnableRaisingEvents = True
+        FileSystemWatcher1.SynchronizingObject = Me
+        ' 
         ' frmMain
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -334,6 +344,7 @@ Partial Class frmMain
         StatusStrip1.ResumeLayout(False)
         StatusStrip1.PerformLayout()
         Panel1.ResumeLayout(False)
+        CType(FileSystemWatcher1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -365,5 +376,7 @@ Partial Class frmMain
     Friend WithEvents إدارةالأعضاءToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents إدارةالموظفينToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents إغلاقالبرنامجToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents FileSystemWatcher1 As IO.FileSystemWatcher
+
 
 End Class

@@ -21,38 +21,20 @@ Namespace WinFormsApp2
 
         End Sub
 
-        Private Sub btnLogin_Click1(sender As Object, e As EventArgs) Handles btnLogin.Click
-            If txtUsername.Text = "admin" And txtPassword.Text = "123" Then
-                ' افتح المين
-                Dim main As New frmMain()
-                main.Show()
 
-                ' أغلق اللوجن نهائياً (بدل Hide استخدم Close إذا عملت الخطوة 1)
-                Me.Hide()
-            Else
-                MessageBox.Show("خطأ")
-            End If
-        End Sub
+
         Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
-            ' 1. تنظيف المدخلات من الفراغات الزائدة
             Dim user As String = txtUsername.Text.Trim()
             Dim pass As String = txtPassword.Text.Trim()
-
-            ' 2. فحص البيانات (عدلهم حسب شو بدك)
             If user = "admin" And pass = "123" Then
 
-                ' 3. السطر السحري: نفتح المين مباشرة بدون كلمة New
                 frmMain.Show()
 
-                ' 4. إخفاء شاشة اللوجن الحالية
                 Me.Hide()
 
             Else
-                ' رسالة خطأ احترافية
                 MessageBox.Show("اسم المستخدم أو كلمة المرور غير صحيحة", "خطأ في الدخول",
                             MessageBoxButtons.OK, MessageBoxIcon.Error)
-
-                ' تنظيف الحقول للمحاولة مرة ثانية
                 txtPassword.Clear()
                 txtUsername.Focus()
             End If

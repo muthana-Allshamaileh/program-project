@@ -33,9 +33,12 @@
             ' 
             ' txtUsername
             ' 
+            txtUsername.BackColor = SystemColors.ScrollBar
+            txtUsername.BorderStyle = BorderStyle.FixedSingle
+            txtUsername.Cursor = Cursors.IBeam
             txtUsername.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
             txtUsername.ForeColor = SystemColors.WindowFrame
-            txtUsername.Location = New Point(291, 195)
+            txtUsername.Location = New Point(296, 172)
             txtUsername.Name = "txtUsername"
             txtUsername.Size = New Size(214, 29)
             txtUsername.TabIndex = 0
@@ -43,9 +46,12 @@
             ' 
             ' txtPassword
             ' 
+            txtPassword.BackColor = SystemColors.ScrollBar
+            txtPassword.BorderStyle = BorderStyle.FixedSingle
+            txtPassword.Cursor = Cursors.IBeam
             txtPassword.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
             txtPassword.ForeColor = SystemColors.WindowFrame
-            txtPassword.Location = New Point(291, 230)
+            txtPassword.Location = New Point(296, 207)
             txtPassword.Name = "txtPassword"
             txtPassword.Size = New Size(214, 29)
             txtPassword.TabIndex = 1
@@ -53,12 +59,12 @@
             ' 
             ' btnLogin
             ' 
-            btnLogin.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(128))
-            btnLogin.Font = New Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-            btnLogin.ForeColor = SystemColors.ControlLightLight
-            btnLogin.Location = New Point(310, 284)
+            btnLogin.BackColor = Color.Snow
+            btnLogin.Font = New Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+            btnLogin.ForeColor = Color.Maroon
+            btnLogin.Location = New Point(296, 355)
             btnLogin.Name = "btnLogin"
-            btnLogin.Size = New Size(75, 39)
+            btnLogin.Size = New Size(95, 39)
             btnLogin.TabIndex = 2
             btnLogin.Text = "login"
             btnLogin.UseVisualStyleBackColor = False
@@ -67,7 +73,7 @@
             ' 
             Button2.Font = New Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
             Button2.ForeColor = Color.DarkGoldenrod
-            Button2.Location = New Point(391, 283)
+            Button2.Location = New Point(417, 355)
             Button2.Name = "Button2"
             Button2.Size = New Size(93, 39)
             Button2.TabIndex = 5
@@ -78,11 +84,12 @@
             ' 
             Label1.AutoSize = True
             Label1.BackColor = Color.Transparent
-            Label1.Font = New Font("Segoe Script", 21.75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-            Label1.ForeColor = Color.PaleGoldenrod
-            Label1.Location = New Point(217, 134)
+            Label1.Font = New Font("Segoe UI Semibold", 21.75F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+            Label1.ForeColor = Color.DimGray
+            Label1.ImageAlign = ContentAlignment.MiddleLeft
+            Label1.Location = New Point(254, 37)
             Label1.Name = "Label1"
-            Label1.Size = New Size(354, 48)
+            Label1.Size = New Size(317, 40)
             Label1.TabIndex = 6
             Label1.Text = "المكتبة الالكترونية الحديثة"
             ' 
@@ -90,7 +97,7 @@
             ' 
             AutoScaleDimensions = New SizeF(7F, 15F)
             AutoScaleMode = AutoScaleMode.Font
-            BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(192))
+            BackColor = Color.DarkGray
             BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
             BackgroundImageLayout = ImageLayout.Stretch
             ClientSize = New Size(800, 450)

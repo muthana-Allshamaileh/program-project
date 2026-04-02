@@ -16,3 +16,8 @@ C:\Users\muthana shamaileh\source\repos\WinFormsApp2\obj\Debug\net8.0-windows\re
 C:\Users\muthana shamaileh\source\repos\WinFormsApp2\obj\Debug\net8.0-windows\WinFormsApp2.pdb
 C:\Users\muthana shamaileh\source\repos\WinFormsApp2\obj\Debug\net8.0-windows\WinFormsApp2.genruntimeconfig.cache
 C:\Users\muthana shamaileh\source\repos\WinFormsApp2\obj\Debug\net8.0-windows\ref\WinFormsApp2.dll
+C:\Users\muthana shamaileh\source\repos\WinFormsApp2\obj\Debug\net8.0-windows\WinFormsApp2.sourcelink.json
+C:\Users\muthana shamaileh\source\repos\WinFormsApp2\obj\Debug\net8.0-windows\WinFormsApp2.frmMembers.resources
+C:\Users\muthana shamaileh\source\repos\WinFormsApp2\obj\Debug\net8.0-windows\WinFormsApp2.frmBooks.resources
+C:\Users\muthana shamaileh\source\repos\WinFormsApp2\obj\Debug\net8.0-windows\WinFormsApp2.frmBorrow.resources
+C:\Users\muthana shamaileh\source\repos\WinFormsApp2\obj\Debug\net8.0-windows\WinFormsApp2.frmEmployees.resources
