@@ -45,16 +45,19 @@ Partial Class frmMain
         lblDate = New ToolStripStatusLabel()
         Timer1 = New Timer(components)
         Panel1 = New Panel()
+        btnSearchForm = New Button()
+        btnReturnBook = New Button()
         Panel2 = New Panel()
+        Button1 = New Button()
         Button5 = New Button()
         Button4 = New Button()
         Button3 = New Button()
         Button2 = New Button()
-        Button1 = New Button()
         FileSystemWatcher1 = New IO.FileSystemWatcher()
         MenuStrip1.SuspendLayout()
         StatusStrip1.SuspendLayout()
         Panel1.SuspendLayout()
+        Panel2.SuspendLayout()
         CType(FileSystemWatcher1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -165,7 +168,7 @@ Partial Class frmMain
         ' 
         ' StatusStrip1
         ' 
-        StatusStrip1.BackColor = SystemColors.ActiveBorder
+        StatusStrip1.BackColor = SystemColors.ActiveCaption
         StatusStrip1.Items.AddRange(New ToolStripItem() {lblEmpName, lblDate})
         StatusStrip1.Location = New Point(0, 428)
         StatusStrip1.Name = "StatusStrip1"
@@ -194,26 +197,91 @@ Partial Class frmMain
         ' 
         Panel1.BackColor = Color.SlateGray
         Panel1.BorderStyle = BorderStyle.Fixed3D
+        Panel1.Controls.Add(btnSearchForm)
+        Panel1.Controls.Add(btnReturnBook)
         Panel1.Controls.Add(Panel2)
         Panel1.Controls.Add(Button5)
         Panel1.Controls.Add(Button4)
         Panel1.Controls.Add(Button3)
         Panel1.Controls.Add(Button2)
-        Panel1.Controls.Add(Button1)
         Panel1.Dock = DockStyle.Left
         Panel1.Location = New Point(0, 24)
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(132, 404)
         Panel1.TabIndex = 4
         ' 
+        ' btnSearchForm
+        ' 
+        btnSearchForm.Cursor = Cursors.Hand
+        btnSearchForm.FlatAppearance.BorderSize = 0
+        btnSearchForm.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
+        btnSearchForm.FlatAppearance.MouseOverBackColor = Color.OrangeRed
+        btnSearchForm.FlatStyle = FlatStyle.Flat
+        btnSearchForm.Font = New Font("Segoe UI", 11.25F, FontStyle.Bold)
+        btnSearchForm.ForeColor = SystemColors.ButtonFace
+        btnSearchForm.Image = CType(resources.GetObject("btnSearchForm.Image"), Image)
+        btnSearchForm.ImageAlign = ContentAlignment.MiddleLeft
+        btnSearchForm.Location = New Point(1, 44)
+        btnSearchForm.Name = "btnSearchForm"
+        btnSearchForm.Padding = New Padding(3, 0, 0, 0)
+        btnSearchForm.Size = New Size(123, 57)
+        btnSearchForm.TabIndex = 7
+        btnSearchForm.Text = "البحث والإستعلام"
+        btnSearchForm.TextAlign = ContentAlignment.MiddleLeft
+        btnSearchForm.TextImageRelation = TextImageRelation.ImageBeforeText
+        btnSearchForm.UseVisualStyleBackColor = True
+        ' 
+        ' btnReturnBook
+        ' 
+        btnReturnBook.Cursor = Cursors.Hand
+        btnReturnBook.FlatAppearance.BorderSize = 0
+        btnReturnBook.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
+        btnReturnBook.FlatAppearance.MouseOverBackColor = Color.OrangeRed
+        btnReturnBook.FlatStyle = FlatStyle.Flat
+        btnReturnBook.Font = New Font("Segoe UI", 11.25F, FontStyle.Bold)
+        btnReturnBook.ForeColor = SystemColors.ButtonFace
+        btnReturnBook.Image = CType(resources.GetObject("btnReturnBook.Image"), Image)
+        btnReturnBook.ImageAlign = ContentAlignment.MiddleLeft
+        btnReturnBook.Location = New Point(-1, 322)
+        btnReturnBook.Name = "btnReturnBook"
+        btnReturnBook.Padding = New Padding(3, 0, 0, 0)
+        btnReturnBook.Size = New Size(126, 56)
+        btnReturnBook.TabIndex = 6
+        btnReturnBook.Text = "إرجاع الكتب "
+        btnReturnBook.TextAlign = ContentAlignment.MiddleLeft
+        btnReturnBook.TextImageRelation = TextImageRelation.ImageBeforeText
+        btnReturnBook.UseVisualStyleBackColor = True
+        ' 
         ' Panel2
         ' 
         Panel2.BorderStyle = BorderStyle.FixedSingle
+        Panel2.Controls.Add(Button1)
         Panel2.Dock = DockStyle.Top
         Panel2.Location = New Point(0, 0)
         Panel2.Name = "Panel2"
-        Panel2.Size = New Size(128, 35)
+        Panel2.Size = New Size(128, 48)
         Panel2.TabIndex = 5
+        ' 
+        ' Button1
+        ' 
+        Button1.Cursor = Cursors.Hand
+        Button1.FlatAppearance.BorderSize = 0
+        Button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
+        Button1.FlatAppearance.MouseOverBackColor = Color.OrangeRed
+        Button1.FlatStyle = FlatStyle.Flat
+        Button1.Font = New Font("Segoe UI", 11.25F, FontStyle.Bold)
+        Button1.ForeColor = SystemColors.ButtonFace
+        Button1.Image = CType(resources.GetObject("Button1.Image"), Image)
+        Button1.ImageAlign = ContentAlignment.MiddleLeft
+        Button1.Location = New Point(0, -1)
+        Button1.Name = "Button1"
+        Button1.Padding = New Padding(3, 0, 0, 0)
+        Button1.Size = New Size(123, 47)
+        Button1.TabIndex = 0
+        Button1.Text = "الرئيسية"
+        Button1.TextAlign = ContentAlignment.MiddleLeft
+        Button1.TextImageRelation = TextImageRelation.ImageBeforeText
+        Button1.UseVisualStyleBackColor = True
         ' 
         ' Button5
         ' 
@@ -226,7 +294,7 @@ Partial Class frmMain
         Button5.ForeColor = SystemColors.ButtonFace
         Button5.Image = CType(resources.GetObject("Button5.Image"), Image)
         Button5.ImageAlign = ContentAlignment.MiddleLeft
-        Button5.Location = New Point(3, 284)
+        Button5.Location = New Point(-1, 269)
         Button5.Name = "Button5"
         Button5.Padding = New Padding(3, 0, 0, 0)
         Button5.Size = New Size(126, 56)
@@ -247,7 +315,7 @@ Partial Class frmMain
         Button4.ForeColor = SystemColors.ButtonFace
         Button4.Image = CType(resources.GetObject("Button4.Image"), Image)
         Button4.ImageAlign = ContentAlignment.MiddleLeft
-        Button4.Location = New Point(3, 221)
+        Button4.Location = New Point(-1, 206)
         Button4.Name = "Button4"
         Button4.Padding = New Padding(3, 0, 0, 0)
         Button4.Size = New Size(126, 57)
@@ -268,7 +336,7 @@ Partial Class frmMain
         Button3.ForeColor = SystemColors.ButtonFace
         Button3.Image = CType(resources.GetObject("Button3.Image"), Image)
         Button3.ImageAlign = ContentAlignment.MiddleLeft
-        Button3.Location = New Point(3, 157)
+        Button3.Location = New Point(-2, 142)
         Button3.Name = "Button3"
         Button3.Padding = New Padding(3, 0, 0, 0)
         Button3.Size = New Size(126, 58)
@@ -289,7 +357,7 @@ Partial Class frmMain
         Button2.ForeColor = SystemColors.ButtonFace
         Button2.Image = CType(resources.GetObject("Button2.Image"), Image)
         Button2.ImageAlign = ContentAlignment.MiddleLeft
-        Button2.Location = New Point(3, 94)
+        Button2.Location = New Point(2, 94)
         Button2.Name = "Button2"
         Button2.Size = New Size(126, 57)
         Button2.TabIndex = 1
@@ -297,27 +365,6 @@ Partial Class frmMain
         Button2.TextAlign = ContentAlignment.MiddleLeft
         Button2.TextImageRelation = TextImageRelation.ImageBeforeText
         Button2.UseVisualStyleBackColor = True
-        ' 
-        ' Button1
-        ' 
-        Button1.Cursor = Cursors.Hand
-        Button1.FlatAppearance.BorderSize = 0
-        Button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
-        Button1.FlatAppearance.MouseOverBackColor = Color.OrangeRed
-        Button1.FlatStyle = FlatStyle.Flat
-        Button1.Font = New Font("Segoe UI", 11.25F, FontStyle.Bold)
-        Button1.ForeColor = SystemColors.ButtonFace
-        Button1.Image = CType(resources.GetObject("Button1.Image"), Image)
-        Button1.ImageAlign = ContentAlignment.MiddleLeft
-        Button1.Location = New Point(3, 41)
-        Button1.Name = "Button1"
-        Button1.Padding = New Padding(3, 0, 0, 0)
-        Button1.Size = New Size(123, 47)
-        Button1.TabIndex = 0
-        Button1.Text = "الرئيسية"
-        Button1.TextAlign = ContentAlignment.MiddleLeft
-        Button1.TextImageRelation = TextImageRelation.ImageBeforeText
-        Button1.UseVisualStyleBackColor = True
         ' 
         ' FileSystemWatcher1
         ' 
@@ -344,6 +391,7 @@ Partial Class frmMain
         StatusStrip1.ResumeLayout(False)
         StatusStrip1.PerformLayout()
         Panel1.ResumeLayout(False)
+        Panel2.ResumeLayout(False)
         CType(FileSystemWatcher1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
@@ -377,6 +425,8 @@ Partial Class frmMain
     Friend WithEvents إدارةالموظفينToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents إغلاقالبرنامجToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents FileSystemWatcher1 As IO.FileSystemWatcher
+    Friend WithEvents btnReturnBook As Button
+    Friend WithEvents btnSearchForm As Button
 
 
 End Class

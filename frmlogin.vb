@@ -21,20 +21,18 @@ Namespace WinFormsApp2
 
         End Sub
 
-
-
         Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
             Dim user As String = txtUsername.Text.Trim()
             Dim pass As String = txtPassword.Text.Trim()
+
             If user = "admin" And pass = "123" Then
 
+                frmMain.lblEmpName.Text = "الموظف: " & user
                 frmMain.Show()
-
                 Me.Hide()
 
             Else
-                MessageBox.Show("اسم المستخدم أو كلمة المرور غير صحيحة", "خطأ في الدخول",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error)
+                MessageBox.Show("اسم المستخدم أو كلمة المرور غير صحيحة", "خطأ في الدخول", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 txtPassword.Clear()
                 txtUsername.Focus()
             End If

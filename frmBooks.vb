@@ -21,7 +21,7 @@
             MessageBox.Show("الرجاء تعبئة جميع بيانات الكتاب!", "تنبيه", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Return
         End If
-        Dim row As String() = New String() {Label1.Text, Label2.Text, Label3.Text, cmbCategory.Text}
+        Dim row As String() = New String() {txtBookID.Text, txtTitle.Text, txtAuthor.Text, cmbCategory.Text}
         dgvBooks.Rows.Add(row)
 
 
@@ -29,6 +29,6 @@
         txtTitle.Clear()
         txtAuthor.Clear()
         cmbCategory.SelectedIndex = -1
-        Label1.Focus()
+        txtBookID.Focus()
     End Sub
 End Class

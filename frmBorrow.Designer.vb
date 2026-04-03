@@ -154,7 +154,7 @@ Partial Class frmBorrow
         FormBorderStyle = FormBorderStyle.FixedSingle
         MaximizeBox = False
         Name = "frmBorrow"
-        Text = "frmBorrow"
+        Text = "حركة الإستعارة"
         CType(dgvBorrow, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
