@@ -21,7 +21,7 @@ Public Class frmmenu
     End Sub
 
     Private Sub frmlogin_Click(sender As Object, e As EventArgs) Handles frmlogin.Click
-
+        frmlogin.Show()
     End Sub
 
     Private Sub frmborrow_Click(sender As Object, e As EventArgs) Handles frmborrow.Click
