@@ -144,26 +144,26 @@ Partial Class frmMain
         ' إعداداتToolStripMenuItem
         ' 
         إعداداتToolStripMenuItem.Name = "إعداداتToolStripMenuItem"
-        إعداداتToolStripMenuItem.Size = New Size(180, 22)
+        إعداداتToolStripMenuItem.Size = New Size(167, 22)
         إعداداتToolStripMenuItem.Text = "إعدادات "
         ' 
         ' أخذنسخةإحتياطيةToolStripMenuItem
         ' 
         أخذنسخةإحتياطيةToolStripMenuItem.Name = "أخذنسخةإحتياطيةToolStripMenuItem"
-        أخذنسخةإحتياطيةToolStripMenuItem.Size = New Size(180, 22)
+        أخذنسخةإحتياطيةToolStripMenuItem.Size = New Size(167, 22)
         أخذنسخةإحتياطيةToolStripMenuItem.Text = "أخذ نسخة إحتياطية "
         ' 
         ' تسجيلخروجToolStripMenuItem
         ' 
         تسجيلخروجToolStripMenuItem.Name = "تسجيلخروجToolStripMenuItem"
-        تسجيلخروجToolStripMenuItem.Size = New Size(180, 22)
+        تسجيلخروجToolStripMenuItem.Size = New Size(167, 22)
         تسجيلخروجToolStripMenuItem.Text = "تسجيل خروج"
         ' 
         ' StatusStrip1
         ' 
         StatusStrip1.BackColor = SystemColors.ActiveCaption
         StatusStrip1.Items.AddRange(New ToolStripItem() {lblEmpName, lblDate})
-        StatusStrip1.Location = New Point(0, 428)
+        StatusStrip1.Location = New Point(0, 443)
         StatusStrip1.Name = "StatusStrip1"
         StatusStrip1.Size = New Size(800, 22)
         StatusStrip1.TabIndex = 2
@@ -200,7 +200,7 @@ Partial Class frmMain
         Panel1.Dock = DockStyle.Left
         Panel1.Location = New Point(0, 24)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(132, 404)
+        Panel1.Size = New Size(132, 419)
         Panel1.TabIndex = 4
         ' 
         ' btnSearchForm
@@ -235,7 +235,7 @@ Partial Class frmMain
         btnReturnBook.ForeColor = SystemColors.ButtonFace
         btnReturnBook.Image = CType(resources.GetObject("btnReturnBook.Image"), Image)
         btnReturnBook.ImageAlign = ContentAlignment.MiddleLeft
-        btnReturnBook.Location = New Point(-1, 322)
+        btnReturnBook.Location = New Point(-2, 339)
         btnReturnBook.Name = "btnReturnBook"
         btnReturnBook.Padding = New Padding(3, 0, 0, 0)
         btnReturnBook.Size = New Size(126, 56)
@@ -287,7 +287,7 @@ Partial Class frmMain
         Button5.ForeColor = SystemColors.ButtonFace
         Button5.Image = CType(resources.GetObject("Button5.Image"), Image)
         Button5.ImageAlign = ContentAlignment.MiddleLeft
-        Button5.Location = New Point(-1, 269)
+        Button5.Location = New Point(-2, 259)
         Button5.Name = "Button5"
         Button5.Padding = New Padding(3, 0, 0, 0)
         Button5.Size = New Size(126, 56)
@@ -308,7 +308,7 @@ Partial Class frmMain
         Button4.ForeColor = SystemColors.ButtonFace
         Button4.Image = CType(resources.GetObject("Button4.Image"), Image)
         Button4.ImageAlign = ContentAlignment.MiddleLeft
-        Button4.Location = New Point(-1, 206)
+        Button4.Location = New Point(-2, 196)
         Button4.Name = "Button4"
         Button4.Padding = New Padding(3, 0, 0, 0)
         Button4.Size = New Size(126, 57)
@@ -370,7 +370,7 @@ Partial Class frmMain
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(800, 465)
         Controls.Add(Panel1)
         Controls.Add(StatusStrip1)
         Controls.Add(MenuStrip1)

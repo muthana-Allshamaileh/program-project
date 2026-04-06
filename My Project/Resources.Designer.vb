@@ -63,6 +63,69 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property _71J30nbGgOL() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("71J30nbGgOL", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property _71J30nbGgOL1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("71J30nbGgOL1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property logo_VJOZ0DUBBPlZ2OQb() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("logo-VJOZ0DUBBPlZ2OQb", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property pngtree_clean_blank_postage_stamp_mockup_with_border_and_shadow_vector_png_image_51934384() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("pngtree-clean-blank-postage-stamp-mockup-with-border-and-shadow-vector-png-image_"& _ 
+                        "51934384", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property pngtree_clean_blank_postage_stamp_mockup_with_border_and_shadow_vector_png_image_519343841() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("pngtree-clean-blank-postage-stamp-mockup-with-border-and-shadow-vector-png-image_"& _ 
+                        "519343841", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property pngtree_clean_blank_postage_stamp_mockup_with_border_and_shadow_vector_png_image_519343842() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("pngtree-clean-blank-postage-stamp-mockup-with-border-and-shadow-vector-png-image_"& _ 
+                        "519343842", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property pngtree_logout_icon_vectors_png_image_1737872() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("pngtree-logout-icon-vectors-png-image_1737872", resourceCulture)
