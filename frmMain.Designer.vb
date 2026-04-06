@@ -63,7 +63,7 @@ Partial Class frmMain
         ' MenuStrip1
         ' 
         MenuStrip1.BackColor = SystemColors.ActiveCaption
-        MenuStrip1.Items.AddRange(New ToolStripItem() {النوافذToolStripMenuItem, إدارةالكتبوالمؤلفينToolStripMenuItem, إدارةالأعضاءToolStripMenuItem, الإستعارةوالإسترجاعToolStripMenuItem, ملفToolStripMenuItem})
+        MenuStrip1.Items.AddRange(New ToolStripItem() {النوافذToolStripMenuItem, إدارةالكتبوالمؤلفينToolStripMenuItem, الإستعارةوالإسترجاعToolStripMenuItem, إدارةالأعضاءToolStripMenuItem, ملفToolStripMenuItem})
         MenuStrip1.Location = New Point(0, 0)
         MenuStrip1.MdiWindowListItem = النوافذToolStripMenuItem
         MenuStrip1.Name = "MenuStrip1"
@@ -87,13 +87,13 @@ Partial Class frmMain
         ' الإستعارةToolStripMenuItem
         ' 
         الإستعارةToolStripMenuItem.Name = "الإستعارةToolStripMenuItem"
-        الإستعارةToolStripMenuItem.Size = New Size(118, 22)
+        الإستعارةToolStripMenuItem.Size = New Size(180, 22)
         الإستعارةToolStripMenuItem.Text = "الإستعارة"
         ' 
         ' الإرجاعToolStripMenuItem
         ' 
         الإرجاعToolStripMenuItem.Name = "الإرجاعToolStripMenuItem"
-        الإرجاعToolStripMenuItem.Size = New Size(118, 22)
+        الإرجاعToolStripMenuItem.Size = New Size(180, 22)
         الإرجاعToolStripMenuItem.Text = "الإرجاع"
         ' 
         ' إدارةالأعضاءToolStripMenuItem
@@ -125,13 +125,13 @@ Partial Class frmMain
         ' إدارةالأعضاءToolStripMenuItem1
         ' 
         إدارةالأعضاءToolStripMenuItem1.Name = "إدارةالأعضاءToolStripMenuItem1"
-        إدارةالأعضاءToolStripMenuItem1.Size = New Size(147, 22)
+        إدارةالأعضاءToolStripMenuItem1.Size = New Size(180, 22)
         إدارةالأعضاءToolStripMenuItem1.Text = "إدارة الأعضاء "
         ' 
         ' إدارةالموظفينToolStripMenuItem1
         ' 
         إدارةالموظفينToolStripMenuItem1.Name = "إدارةالموظفينToolStripMenuItem1"
-        إدارةالموظفينToolStripMenuItem1.Size = New Size(147, 22)
+        إدارةالموظفينToolStripMenuItem1.Size = New Size(180, 22)
         إدارةالموظفينToolStripMenuItem1.Text = "إدارة الموظفين"
         ' 
         ' ملفToolStripMenuItem
@@ -366,7 +366,7 @@ Partial Class frmMain
         ' 
         ' frmMain
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch

@@ -1,34 +1,30 @@
 ﻿Imports WinFormsApp2.WinFormsApp2
 
 Public Class frmmenu
-    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles frmmain.Click
-        frmmain.Show()
-    End Sub
-
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles frmreturn.Click
-        frmreturn.Show()
+    Private Sub frmemployees_Click(sender As Object, e As EventArgs) Handles frmemployees.Click
+        Dim fEmp As New Global.WinFormsApp2.frmEmployees()
+        fEmp.ShowDialog()
     End Sub
 
     Private Sub frmbooks_Click(sender As Object, e As EventArgs) Handles frmbooks.Click
-        frmbooks.Show()
-    End Sub
-    Private Sub frmemployees_Click(sender As Object, e As EventArgs) Handles frmemployees.Click
-        frmemployees.Show()
+        Dim fBooks As New Global.WinFormsApp2.frmBooks()
+        fBooks.ShowDialog()
     End Sub
 
-    Private Sub frmmenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
-    Private Sub frmlogin_Click(sender As Object, e As EventArgs) Handles frmlogin.Click
-        frmlogin.Show()
+    Private Sub frmmain_Click(sender As Object, e As EventArgs) Handles frmmain.Click
+        Dim fMain As New Global.WinFormsApp2.frmMain()
+        fMain.ShowDialog()
     End Sub
 
     Private Sub frmborrow_Click(sender As Object, e As EventArgs) Handles frmborrow.Click
-        frmborrow.Show()
+        Dim fBorrow As New Global.WinFormsApp2.frmBorrow()
+        fBorrow.ShowDialog()
     End Sub
 
-    Private Sub frmsetting_Click(sender As Object, e As EventArgs) Handles frmsetting.Click
-
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles frmreturn.Click
+        Dim fReturn As New Global.WinFormsApp2.frmReturn()
+        fReturn.ShowDialog()
     End Sub
+
+
 End Class

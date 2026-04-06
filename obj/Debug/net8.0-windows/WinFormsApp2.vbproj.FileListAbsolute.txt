@@ -50,3 +50,5 @@ C:\Users\Sales\program-project\obj\Debug\net8.0-windows\WinFormsApp2.pdb
 C:\Users\Sales\program-project\obj\Debug\net8.0-windows\WinFormsApp2.genruntimeconfig.cache
 C:\Users\Sales\program-project\obj\Debug\net8.0-windows\ref\WinFormsApp2.dll
 C:\Users\Sales\program-project\obj\Debug\net8.0-windows\WinFormsApp2.frmmenu.resources
+C:\Users\muthana shamaileh\source\repos\WinFormsApp2\obj\Debug\net8.0-windows\WinFormsApp2.frmlloo.resources
+C:\Users\muthana shamaileh\source\repos\WinFormsApp2\obj\Debug\net8.0-windows\WinFormsApp2.frmmenu.resources

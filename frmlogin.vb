@@ -28,7 +28,7 @@ Namespace WinFormsApp2
             If user = "admin" And pass = "123" Then
 
                 frmMain.lblEmpName.Text = "الموظف: " & user
-                frmMain.Show()
+                frmmenu.Show()
                 Me.Hide()
 
             Else

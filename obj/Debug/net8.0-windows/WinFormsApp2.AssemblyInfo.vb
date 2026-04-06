@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("WinFormsApp2"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e2bb2fa65f6c75a7cfc49f49a3d0ae5ea0f1a367"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e1f034f410b2c078266353c39fe3feb4f18943ca"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("WinFormsApp2"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("WinFormsApp2"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _

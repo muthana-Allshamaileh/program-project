@@ -54,6 +54,7 @@ Public Class frmMain
     End Sub
 
     Private Sub تسجيلخروجToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles تسجيلخروجToolStripMenuItem.Click
+        Dim frm As New frmlloo()
         frmlloo.Show()
     End Sub
 
