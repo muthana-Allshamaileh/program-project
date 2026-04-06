@@ -6,13 +6,7 @@
 
     Private Sub frmBooks_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        dgvBooks.ColumnCount = 4
-        dgvBooks.Columns(0).Name = "رقم الكتاب"
-        dgvBooks.Columns(1).Name = "عنوان الكتاب"
-        dgvBooks.Columns(2).Name = "اسم المؤلف"
-        dgvBooks.Columns(3).Name = "التصنيف"
 
-        dgvBooks.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
     End Sub
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
@@ -21,8 +15,7 @@
             MessageBox.Show("الرجاء تعبئة جميع بيانات الكتاب!", "تنبيه", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Return
         End If
-        Dim row As String() = New String() {txtBookID.Text, txtTitle.Text, txtAuthor.Text, cmbCategory.Text}
-        dgvBooks.Rows.Add(row)
+      
 
 
         txtBookID.Clear()
