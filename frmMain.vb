@@ -1,4 +1,6 @@
-﻿Public Class frmMain
+﻿Imports WinFormsApp2.WinFormsApp2
+
+Public Class frmMain
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         lblDate.Text = DateTime.Now.ToString("dd/MM/yyyy hh:mm:ss tt")
@@ -45,5 +47,13 @@
     Private Sub btnReturnBook_Click(sender As Object, e As EventArgs) Handles btnReturnBook.Click
         Dim frm As New frmReturn()
         frm.ShowDialog()
+    End Sub
+
+    Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub تسجيلخروجToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles تسجيلخروجToolStripMenuItem.Click
+        frmlloo.Show()
     End Sub
 End Class

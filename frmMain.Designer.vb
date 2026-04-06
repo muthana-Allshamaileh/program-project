@@ -39,7 +39,6 @@ Partial Class frmMain
         إعداداتToolStripMenuItem = New ToolStripMenuItem()
         أخذنسخةإحتياطيةToolStripMenuItem = New ToolStripMenuItem()
         تسجيلخروجToolStripMenuItem = New ToolStripMenuItem()
-        إغلاقالبرنامجToolStripMenuItem = New ToolStripMenuItem()
         StatusStrip1 = New StatusStrip()
         lblEmpName = New ToolStripStatusLabel()
         lblDate = New ToolStripStatusLabel()
@@ -137,7 +136,7 @@ Partial Class frmMain
         ' 
         ' ملفToolStripMenuItem
         ' 
-        ملفToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {إعداداتToolStripMenuItem, أخذنسخةإحتياطيةToolStripMenuItem, تسجيلخروجToolStripMenuItem, إغلاقالبرنامجToolStripMenuItem})
+        ملفToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {إعداداتToolStripMenuItem, أخذنسخةإحتياطيةToolStripMenuItem, تسجيلخروجToolStripMenuItem})
         ملفToolStripMenuItem.Name = "ملفToolStripMenuItem"
         ملفToolStripMenuItem.Size = New Size(50, 20)
         ملفToolStripMenuItem.Text = "النظام"
@@ -145,26 +144,20 @@ Partial Class frmMain
         ' إعداداتToolStripMenuItem
         ' 
         إعداداتToolStripMenuItem.Name = "إعداداتToolStripMenuItem"
-        إعداداتToolStripMenuItem.Size = New Size(167, 22)
+        إعداداتToolStripMenuItem.Size = New Size(180, 22)
         إعداداتToolStripMenuItem.Text = "إعدادات "
         ' 
         ' أخذنسخةإحتياطيةToolStripMenuItem
         ' 
         أخذنسخةإحتياطيةToolStripMenuItem.Name = "أخذنسخةإحتياطيةToolStripMenuItem"
-        أخذنسخةإحتياطيةToolStripMenuItem.Size = New Size(167, 22)
+        أخذنسخةإحتياطيةToolStripMenuItem.Size = New Size(180, 22)
         أخذنسخةإحتياطيةToolStripMenuItem.Text = "أخذ نسخة إحتياطية "
         ' 
         ' تسجيلخروجToolStripMenuItem
         ' 
         تسجيلخروجToolStripMenuItem.Name = "تسجيلخروجToolStripMenuItem"
-        تسجيلخروجToolStripMenuItem.Size = New Size(167, 22)
+        تسجيلخروجToolStripMenuItem.Size = New Size(180, 22)
         تسجيلخروجToolStripMenuItem.Text = "تسجيل خروج"
-        ' 
-        ' إغلاقالبرنامجToolStripMenuItem
-        ' 
-        إغلاقالبرنامجToolStripMenuItem.Name = "إغلاقالبرنامجToolStripMenuItem"
-        إغلاقالبرنامجToolStripMenuItem.Size = New Size(167, 22)
-        إغلاقالبرنامجToolStripMenuItem.Text = "إغلاق البرنامج"
         ' 
         ' StatusStrip1
         ' 
@@ -423,7 +416,6 @@ Partial Class frmMain
     Friend WithEvents إدارةالمؤلفينToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents إدارةالأعضاءToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents إدارةالموظفينToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents إغلاقالبرنامجToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents FileSystemWatcher1 As IO.FileSystemWatcher
     Friend WithEvents btnReturnBook As Button
     Friend WithEvents btnSearchForm As Button
